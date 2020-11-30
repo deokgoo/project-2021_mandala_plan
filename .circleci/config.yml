@@ -52,10 +52,9 @@ jobs:
 
 workflows:
   version: 2
-  test_build_app:
+  ut_and_build:
     jobs:
       - unit_tests
-        name: unit_tests
-      - build
+      - build :
         requires:
           - unit_tests

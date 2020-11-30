@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   unit_tests:
     docker:
-      - image: "circleci/node:9.6.1"
+      - image: cimg/node:15.3.0
     steps:
       - checkout
       - restore_cache:

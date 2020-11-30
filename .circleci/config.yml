@@ -55,6 +55,6 @@ workflows:
   ut_and_build:
     jobs:
       - unit_tests
-      - build :
+      - build:
         requires:
           - unit_tests

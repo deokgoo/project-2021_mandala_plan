@@ -56,5 +56,5 @@ workflows:
     jobs:
       - unit_tests
       - build:
-        requires:
-          - unit_tests
+          requires:
+            - unit_tests

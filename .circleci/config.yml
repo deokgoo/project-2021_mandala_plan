@@ -1,9 +1,12 @@
+defaults: &defaults
+  docker:
+    - image: cimg/node:15.3.0
+
 version: 2.1
 
 jobs:
   unit_tests:
-    docker:
-      - image: cimg/node:15.3.0
+    <<: *defaults
     steps:
       - checkout
       - restore_cache:
@@ -22,11 +25,29 @@ jobs:
           command: yarn test
           environment:
             JEST_JUNIT_OUTPUT: "test-reports/jest-junit.xml"
+      - store_test_results:
+          path: test-reports
+
+      - store_artifacts:
+          path: test-reports
   build:
-    docker:
-      - image: "circleci/node:9.6.1"
+    <<: *defaults
     steps:
-      - run: yarn build
+      - checkout
+      - restore_cache:
+          keys:
+            - cache-{{ .Branch }}-{{ checksum "package.json" }}
+            # fallback to using the latest cache if no exact match is found
+            - cache-
+      - run: yarn
+      - save_cache:
+          key: cache-{{ .Branch }}-{{ checksum "package.json" }}
+          paths:
+            - node_modules
+            - ~/.npm
+            - ~/.cache
+      - run:
+          command: yarn build
  
 
 workflows:
@@ -35,3 +56,4 @@ workflows:
     jobs:
       - unit_tests
       - build
+        requires: unit_tests

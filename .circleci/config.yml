@@ -10,6 +10,12 @@ jobs:
     steps:
       - checkout
       - run: yarn install --frozen-lockfile
+      - save_cache:
+          key: cache-{{ .Branch }}-{{ checksum "package.json" }}
+          paths:
+            - node_modules
+            - ~/.npm
+            - ~/.cache
       - run:
           command: yarn test
           environment:

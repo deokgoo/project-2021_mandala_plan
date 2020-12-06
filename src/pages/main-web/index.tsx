@@ -1,11 +1,3 @@
-import React from 'react';
-
-const MainWeb = () => {
-  return (
-    <h1>
-      MainWeb
-    </h1>
-  );
-};
+import MainWeb from './main-web';
 
 export default MainWeb;

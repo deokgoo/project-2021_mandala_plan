@@ -1,0 +1,24 @@
+@import 'src/common/color';
+
+$mandalSize: calc(100vh - 60px);
+
+.container {
+  display: flex;
+  min-height: $mandalSize;
+}
+
+.content {
+  width: 70%;
+  min-height: $mandalSize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $mainColor1;
+}
+
+.setting {
+  width: 30%;
+  min-height: $mandalSize;
+  background-color: $mainColor2;
+}
+

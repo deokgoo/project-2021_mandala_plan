@@ -3,14 +3,14 @@ import style from './app.module.scss';
 import useApp from './hooks'
 
 const App = (props: any) => {
-    const { user } = useApp();
+  const {user} = useApp();
 
-    return (
-        <div className={style.App}>
-            {JSON.stringify(user)}
-            <button onClick={() => props.history.push('/test')} />
-        </div>
-    );
+  return (
+    <div className={style.App}>
+      {JSON.stringify(user)}
+      <button onClick={() => props.history.push('/test')}/>
+    </div>
+  );
 };
 
 export default App;

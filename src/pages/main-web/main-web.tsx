@@ -5,7 +5,7 @@ import styles from './main-web.module.scss';
 import SettingWeb from '../../components/setting-web';
 
 const MainWeb = () => {
-  const [menuClose, setMenuClose] = useState(false);
+  // const [menuClose, setMenuClose] = useState(false);
   return (
     <>
       <Header />

@@ -1,0 +1,26 @@
+@import 'src/common/color';
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Zilla+Slab:ital,wght@1,500&display=swap');
+
+.header {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $mainColor5;
+}
+
+.title {
+  color: white;
+  font-size: 2rem;
+  font-family: 'Zilla Slab', serif;
+}
+
+.login {
+  display: none;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  color: white;
+  font-size: 1rem;
+  font-family: 'Zilla Slab', serif;
+}

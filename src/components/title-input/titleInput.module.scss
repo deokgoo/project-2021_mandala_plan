@@ -1,0 +1,12 @@
+@import "src/common/size";
+@import "src/common/color";
+
+.layout {
+  display: flex;
+  justify-content: center;
+}
+
+.titleInput {
+  width: $mobileMandala;
+  height: $mobileMandala;
+}

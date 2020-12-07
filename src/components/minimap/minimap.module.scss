@@ -1,0 +1,9 @@
+@import "src/common/size";
+@import "src/common/color";
+
+.minimap {
+  position: absolute;
+  background-color: $mandalaColor5;
+  width: $mobileMandala;
+  height: $mobileMandala;
+}

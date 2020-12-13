@@ -1,0 +1,14 @@
+@import 'src/common/size';
+
+.container {
+  height: $mediumMandala*9;
+  width: $mediumMandala*9;
+  background-color: white;
+}
+
+@media screen and (min-width: $large){
+  .container {
+    height: $largeMandala*9;
+    width: $largeMandala*9;
+  }
+}

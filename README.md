@@ -104,9 +104,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 deokgoo - kkddgg1001@gmail.com
 
-dongryun - ?
+dongryun - jeongdongryun@gmail.com
 
-Project Link: [https://github.com/deokgoo/repo_name](https://github.com/deokgoo/project-2021_mandala_plan)
+Project Link: [https://github.com/deokgoo/project-2021_mandala_plan](https://github.com/deokgoo/project-2021_mandala_plan)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->

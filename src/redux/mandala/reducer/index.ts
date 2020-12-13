@@ -4,23 +4,25 @@ import {
   UPDATE_DREAM,
 } from '../actions/type';
 import { AnyAction } from 'redux';
+import { sideDreamType, stateType } from './type';
 
-const initialState: any = {
+const initialState: stateType = {
   dreamCore: {
     core: {title: '', description: ''},
-    side: [],
+    side: [
+      {title: '', description: ''},
+      {title: '', description: ''},
+      {title: '', description: ''},
+      {title: '', description: ''},
+      {title: '', description: ''},
+      {title: '', description: ''},
+      {title: '', description: ''},
+      {title: '', description: ''},
+    ]
   },
-  dream0: [{}, {}, {}, {}, {}, {}, {}, {}],
-  dream1: [{}, {}, {}, {}, {}, {}, {}, {}],
-  dream2: [{}, {}, {}, {}, {}, {}, {}, {}],
-  dream3: [{}, {}, {}, {}, {}, {}, {}, {}],
-  dream4: [{}, {}, {}, {}, {}, {}, {}, {}],
-  dream5: [{}, {}, {}, {}, {}, {}, {}, {}],
-  dream6: [{}, {}, {}, {}, {}, {}, {}, {}],
-  dream7: [{}, {}, {}, {}, {}, {}, {}, {}],
-}
+};
 
-const reducer = (state = initialState, action: AnyAction) => {
+const reducer = (state: stateType = initialState, action: AnyAction) => {
   switch (action.type) {
     case UPDATE_CORE: {
       const {title, description} = action.payload;
@@ -44,8 +46,10 @@ const reducer = (state = initialState, action: AnyAction) => {
     case UPDATE_DREAM: {
       const {dreamNum, boxNum, title, description} = action.payload;
       const newDream = {title, description};
-      const newState = Object.assign({}, {...state});
-      newState[`dream${dreamNum}`][boxNum] = newDream;
+      const newState: stateType = Object.assign({}, {...state});
+      // @ts-ignore TODO: typescript
+      newState[sideDreamType[dreamNum]][boxNum] = newDream;
+
       return newState;
     }
 

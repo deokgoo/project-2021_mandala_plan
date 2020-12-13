@@ -8,7 +8,7 @@ const MandalaForm = (props: any) => {
         <input className={styles.titleInput} type="text" />
       </div>
       <div className={styles.descriptionContainer}>
-        <textarea className={styles.description}>description</textarea>
+        <textarea className={styles.description} />
       </div>
     </div>
   );

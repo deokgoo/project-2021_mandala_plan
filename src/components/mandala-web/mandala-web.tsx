@@ -1,9 +1,9 @@
 import React from 'react';
-import useMandalaWeb from './hooks';
 import styles from './mandala-web.module.scss';
+import useMandalaSelector from '../../redux/mandala/hooks';
 
 const MandalaWeb = () => {
-  const { mandalaData } = useMandalaWeb();
+  const { mandalaData } = useMandalaSelector();
   return (
     <div className={styles.container}>
       {JSON.stringify(mandalaData)}

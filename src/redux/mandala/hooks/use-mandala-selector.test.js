@@ -1,4 +1,4 @@
-import useMandalaWeb from './use-mandala-web';
+import useMandalaSelector from './use-mandala-selector';
 import { renderHook } from '@testing-library/react-hooks';
 
 const mandalaState = {
@@ -22,9 +22,9 @@ jest.mock('react-redux', () => ({
   useSelector: () => mandalaState,
 }));
 
-describe('useMandalaWeb ut', () => {
+describe('useMandalaSelector ut', () => {
   it('mandalaData check from redux', async () => {
-    const { result } = await renderHook(() => useMandalaWeb());
+    const { result } = await renderHook(() => useMandalaSelector());
     expect(result.current.mandalaData).toEqual(mandalaState);
   });
 });

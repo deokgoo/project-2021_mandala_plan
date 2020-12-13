@@ -1,18 +1,10 @@
 import React from 'react';
-import Header from '../../components/header';
-import MandalaMobile from '../../components/mandala-mobile';
-import TitleInput from '../../components/title-input';
-import DescInput from '../../components/desc-input';
-import Minimap from '../../components/minimap';
+import MobileTemplate from '../../components/templates/mobile-template';
 
 const MainMobile = () => {
   return (
     <>
-      <Header />
-      <Minimap />
-      <MandalaMobile />
-      <TitleInput />
-      <DescInput />
+      <MobileTemplate />
     </>
   );
 };

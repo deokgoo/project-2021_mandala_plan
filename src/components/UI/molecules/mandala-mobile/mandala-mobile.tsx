@@ -2,9 +2,16 @@ import React from 'react';
 import MandalaUnitMobile from '../mandala-unit-mobile';
 import ArrowHorizontal from '../arrow-horizontal';
 import ArrowVertical from '../arrow-vertical';
-import styles from './mandalaMobile.module.scss';
+import styles from './mandala-mobile.module.scss';
 
 const MandalaMobile = (props: any) => {
+  const renderMandalaMobile = () => {
+    let renderResult = [];
+    for(let i = 0; i < 9; i++) {
+      renderResult.push(<MandalaUnitMobile key={i} />);
+    }
+    return renderResult;
+  }
   return (
     <>
       <ArrowVertical />
@@ -12,15 +19,7 @@ const MandalaMobile = (props: any) => {
         <ArrowHorizontal />
         <div className={styles.mandalaMobileLayout}>
           <div className={styles.container}>
-            <MandalaUnitMobile />
-            <MandalaUnitMobile />
-            <MandalaUnitMobile />
-            <MandalaUnitMobile />
-            <MandalaUnitMobile />
-            <MandalaUnitMobile />
-            <MandalaUnitMobile />
-            <MandalaUnitMobile />
-            <MandalaUnitMobile />
+            {renderMandalaMobile()}
           </div>
         </div>
         <ArrowHorizontal />

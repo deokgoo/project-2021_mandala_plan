@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './mandalaUnitMobile.module.scss';
+import style from './mandala-unit-mobile.module.scss';
 
 const MandalaUnitMobile = (props: any) => {
   return (

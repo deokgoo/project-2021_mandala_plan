@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './arrowVertical.module.scss';
+import styles from './arrow-vertical.module.scss';
 
 const ArrowVertical = (props: any) => {
   return (

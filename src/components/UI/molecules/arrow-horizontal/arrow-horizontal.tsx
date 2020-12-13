@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './arrowHorizontal.module.scss';
+import styles from './arrow-horizontal.module.scss';
 
 const ArrowHorizontal = (props: any) => {
   return (

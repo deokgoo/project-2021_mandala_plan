@@ -1,46 +1,124 @@
-# Getting Started with Create React App
+[![Contributors][contributors-shield]][contributors-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-## Available Scripts
+<h3 align="center">2021 Mandala Plan</h3>
 
-In the project directory, you can run:
+  <p align="center">
+    plan your dream
+    <br />
+    <a href="https://github.com/deokgoo/project-2021_mandala_plan"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://mandala-2021.netlify.app/">View Page</a>
+    ·
+    <a href="https://github.com/deokgoo/project-2021_mandala_plan/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/deokgoo/project-2021_mandala_plan/issues">Request Feature</a>
+  </p>
+</p>
 
-### `yarn start`
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Tech Stack</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#install">install</a></li>
+        <li><a href="#execute">execute</a></li>
+        <li><a href="#test">test</a></li>
+      </ul>
+    </li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+<!-- ABOUT THE PROJECT -->
+## About The Project
+<!-- TODO -->
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Tech Stack
 
-### `yarn build`
+<!-- TODO -->
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- GETTING STARTED -->
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- TODO -->
 
-### `yarn eject`
+### Install
+  ```sh
+   yarn
+   ```
+### Execute
+  ```sh
+  yarn start
+  ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Test
+   ```sh
+   yarn test
+   ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- CONTRIBUTING -->
+## Contributing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+
+<!-- CONTACT -->
+## Contact
+
+deokgoo - kkddgg1001@gmail.com
+
+dongryun - jeongdongryun@gmail.com
+
+Project Link: [https://github.com/deokgoo/project-2021_mandala_plan](https://github.com/deokgoo/project-2021_mandala_plan)
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/deokgoo/project-2021_mandala_plan?style=for-the-badge
+[contributors-url]: https://github.com/deokgoo/Best-README-Template/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/deokgoo/Best-README-Template.svg?style=for-the-badge
+[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[stars-shield]: https://img.shields.io/github/stars/deokgoo/project-2021_mandala_plan?style=for-the-badge
+[stars-url]: https://github.com/deokgoo/project-2021_mandala_plan/stargazers
+[issues-shield]: https://img.shields.io/github/issues/deokgoo/project-2021_mandala_plan?style=for-the-badge
+[issues-url]: https://github.com/deokgoo/project-2021_mandala_plan/issues
+[license-shield]: https://img.shields.io/github/license/deokgoo/Best-README-Template.svg?style=for-the-badge
+[license-url]: https://github.com/deokgoo/project-2021_mandala_plan/master/LICENSE.txt
+[product-screenshot]: images/screenshot.png

@@ -4,23 +4,8 @@ import {
   UPDATE_DREAM,
 } from '../actions/type';
 import { AnyAction } from 'redux';
+import initialState from './initialState';
 import { sideDreamType, stateType } from './type';
-
-const initialState: stateType = {
-  dreamCore: {
-    core: {title: '', description: ''},
-    side: [
-      {title: '', description: ''},
-      {title: '', description: ''},
-      {title: '', description: ''},
-      {title: '', description: ''},
-      {title: '', description: ''},
-      {title: '', description: ''},
-      {title: '', description: ''},
-      {title: '', description: ''},
-    ]
-  },
-};
 
 const reducer = (state: stateType = initialState, action: AnyAction) => {
   switch (action.type) {

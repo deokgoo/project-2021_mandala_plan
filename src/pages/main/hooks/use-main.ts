@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { viewTypeEnum } from './type';
 
 const getWindowDimensions = () => {
   const {innerWidth: width, innerHeight: height} = window;
@@ -9,18 +10,21 @@ const getWindowDimensions = () => {
 }
 
 const useMain = () => {
-  const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+  const mobileWidth = 576;
+  const [windowViewType, setWindowViewType] = useState<viewTypeEnum>(
+    getWindowDimensions().width<mobileWidth?viewTypeEnum.mobile:viewTypeEnum.web);
 
   useEffect(() => {
     const handleResize = () => {
-      setWindowDimensions(getWindowDimensions());
+      setWindowViewType(
+        getWindowDimensions().width<mobileWidth?viewTypeEnum.mobile:viewTypeEnum.web);
     }
     window.removeEventListener('resize', handleResize);
     window.addEventListener('resize', handleResize);
   }, []);
 
   return {
-    windowDimensions
+    windowViewType
   }
 }
 

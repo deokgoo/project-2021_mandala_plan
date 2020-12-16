@@ -1,0 +1,12 @@
+@import "src/common/color";
+@import "src/common/size";
+
+.container {
+  display: flex;
+  background-color: $mandalaColor1;
+  width: $mobileMandala;
+  height: $mobileMandala;
+  flex: 1 1 100%/$mandalaUnitCount;
+  justify-content: center;
+  align-items: center;
+}

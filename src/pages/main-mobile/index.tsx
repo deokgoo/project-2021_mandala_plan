@@ -1,11 +1,3 @@
-import React from 'react';
-
-const MainMobile = () => {
-  return (
-    <h1>
-      MainMobile
-    </h1>
-  );
-};
+import MainMobile from './main-mobile';
 
 export default MainMobile;

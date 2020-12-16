@@ -1,12 +1,3 @@
-import React from 'react';
-import MobileTemplate from '../../components/templates/mobile-template';
-
-const MainMobile = () => {
-  return (
-    <>
-      <MobileTemplate />
-    </>
-  );
-};
+import MainMobile from './main-mobile';
 
 export default MainMobile;

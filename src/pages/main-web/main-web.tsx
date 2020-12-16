@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../../components/UI/organisms/header';
-import MandalaWeb from '../../components/UI/organisms/mandala-web';
+import Header from '../../components/header';
+import MandalaWeb from '../../components/mandala-web';
 import styles from './main-web.module.scss';
 import SettingWeb from '../../components/UI/organisms/setting-web';
 

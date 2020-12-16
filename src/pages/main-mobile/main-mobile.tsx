@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../components/UI/organisms/header';
+import Header from '../../components/header';
 import MobileMain from '../../components/UI/organisms/mobile-main';
 
 const MainMobile = () => {

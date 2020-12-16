@@ -1,7 +1,6 @@
 import React from 'react';
 import MandalaUnitMobile from '../mandala-unit-mobile';
-import ArrowHorizontal from '../arrow-horizontal';
-import ArrowVertical from '../arrow-vertical';
+import Arrow from '../arrow';
 import styles from './mandala-mobile.module.scss';
 
 const MandalaMobile = (props: any) => {
@@ -14,17 +13,17 @@ const MandalaMobile = (props: any) => {
   }
   return (
     <>
-      <ArrowVertical />
+      <Arrow />
       <div className={styles.layout}>
-        <ArrowHorizontal />
+        <Arrow />
         <div className={styles.mandalaMobileLayout}>
           <div className={styles.container}>
             {renderMandalaMobile()}
           </div>
         </div>
-        <ArrowHorizontal />
+        <Arrow />
       </div>
-      <ArrowVertical />
+      <Arrow />
     </>
   );
 };

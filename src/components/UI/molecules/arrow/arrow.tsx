@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './arrow-vertical.module.scss';
+import styles from './arrow.module.scss';
 
-const ArrowVertical = (props: any) => {
+const Arrow = (props: any) => {
   return (
     <>
       <div className={styles.container}>
@@ -11,4 +11,4 @@ const ArrowVertical = (props: any) => {
   );
 };
 
-export default ArrowVertical;
+export default Arrow;

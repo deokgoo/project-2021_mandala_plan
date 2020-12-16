@@ -2,6 +2,7 @@ import { unmountComponentAtNode } from 'react-dom';
 import { renderHook } from '@testing-library/react-hooks';
 import useMain from './use-main';
 import { act } from 'react-dom/test-utils';
+import { viewTypeEnum } from './type';
 
 let container: null | HTMLElement = null;
 
@@ -21,10 +22,7 @@ describe('hook test', () => {
   it('windowDimensions test', async () => {
     const { result, waitForNextUpdate } = await renderHook(() => useMain());
 
-    expect(result.current.windowDimensions).toEqual({
-      width: window.innerWidth,
-      height: window.innerHeight,
-    })
+    expect(result.current.windowViewType).toEqual(viewTypeEnum.web);
 
     window = Object.assign(window, { innerWidth: 500, innerHeight: 500 });
     act(() => {
@@ -35,9 +33,6 @@ describe('hook test', () => {
 
     await waitForNextUpdate();
 
-    expect(result.current.windowDimensions).toEqual({
-      width: 500,
-      height: 500,
-    })
+    expect(result.current.windowViewType).toEqual(viewTypeEnum.mobile);
   });
 })

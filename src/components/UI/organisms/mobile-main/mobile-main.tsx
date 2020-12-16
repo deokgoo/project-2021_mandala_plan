@@ -5,13 +5,11 @@ import MandalaForm from '../../molecules/mandala-form';
 
 const MobileMain = (props: any) => {
   return (
-    <>
-      <main>
-        <Minimap />
-        <MandalaMobile />
-        <MandalaForm />
-      </main>
-    </>
+    <main>
+      <Minimap />
+      <MandalaMobile />
+      <MandalaForm />
+    </main>
   );
 };
 

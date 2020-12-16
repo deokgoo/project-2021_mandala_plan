@@ -6,7 +6,7 @@
   background-color: $mandalaColor1;
   width: $mobileMandala;
   height: $mobileMandala;
-  flex: 1 1 33%;
+  flex: 1 1 100%/$mandalaUnitCount;
   justify-content: center;
   align-items: center;
 }

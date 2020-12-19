@@ -14,7 +14,7 @@ const MainWeb = () => {
           <MandalaWeb />
         </div>
         <div className={styles.setting}>
-          <SettingWeb  isCore={true}/>
+          <SettingWeb />
         </div>
       </div>
 

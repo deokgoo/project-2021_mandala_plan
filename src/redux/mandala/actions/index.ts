@@ -12,10 +12,10 @@ export const updateCore = (title: string, description: string) => ({
   }
 })
 
-export const updateCoreSide = (boxNum: number, title: string, description: string) => ({
+export const updateCoreSide = (dreamNum: number, title: string, description: string) => ({
   type: UPDATE_CORE_SIDE,
   payload: {
-    boxNum,
+    dreamNum,
     title,
     description,
   }

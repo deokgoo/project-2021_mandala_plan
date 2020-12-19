@@ -1,6 +1,7 @@
 export type boxNumType = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7;
 
-type mandalaUnitType = { title: '', description: '' };
+export type mandalaUnitType = { title: string, description: string };
+
 type dreamType = [
   mandalaUnitType,
   mandalaUnitType,

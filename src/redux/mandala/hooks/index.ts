@@ -1,7 +1,7 @@
-import useMandalaUpdate from './use-mandala-update';
-import useMandalaSelector from './use-mandala-selector';
+import useMandalaUnitUpdate from './use-mandala-unit-update';
+import useMandalaUnitSelector from './use-mandala-unit-selector';
 
 export default {
-  useMandalaSelector,
-  useMandalaUpdate,
+  useMandalaSelector: useMandalaUnitSelector,
+  useMandalaUpdate: useMandalaUnitUpdate,
 };

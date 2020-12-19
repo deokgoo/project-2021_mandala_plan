@@ -1,3 +1,3 @@
-export const UPDATE_CORE = 'UPDATE_CORE';
-export const UPDATE_CORE_SIDE = 'UPDATE_CORE_SIDE';
-export const UPDATE_DREAM = 'UPDATE_DREAM';
+export const UPDATE_CORE_UNIT = 'UPDATE_CORE_UNIT';
+export const UPDATE_CORE_SIDE_UNIT = 'UPDATE_CORE_SIDE_UNIT';
+export const UPDATE_UNIT = 'UPDATE_UNIT';

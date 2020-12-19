@@ -3,7 +3,7 @@ import { MutableRefObject } from 'react';
 export type mandalaStatusType = {
   isCore: boolean;
   dreamNum?: number|null;
-  boxNum?: number|null;
+  unitNum?: number|null;
 }
 
 export interface refsType {

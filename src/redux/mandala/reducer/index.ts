@@ -1,7 +1,7 @@
 import {
-  UPDATE_CORE,
-  UPDATE_CORE_SIDE,
-  UPDATE_DREAM,
+  UPDATE_CORE_UNIT,
+  UPDATE_CORE_SIDE_UNIT,
+  UPDATE_UNIT,
 } from '../actions/type';
 import { AnyAction } from 'redux';
 import initialState from './initialState';
@@ -9,7 +9,7 @@ import { sideDreamType, stateType } from './type';
 
 const reducer = (state: stateType = initialState, action: AnyAction) => {
   switch (action.type) {
-    case UPDATE_CORE: {
+    case UPDATE_CORE_UNIT: {
       const {title, description} = action.payload;
       const newDreamCore = {
         ...state.dreamCore,
@@ -17,23 +17,23 @@ const reducer = (state: stateType = initialState, action: AnyAction) => {
       }
       return Object.assign({}, {...state}, {dreamCore: newDreamCore});
     }
-    case UPDATE_CORE_SIDE: {
-      const {boxNum, title, description} = action.payload;
+    case UPDATE_CORE_SIDE_UNIT: {
+      const {unitNum, title, description} = action.payload;
       const newDreamCore = {
         ...state.dreamCore
       }
-      newDreamCore.side[boxNum] = {
+      newDreamCore.side[unitNum] = {
         title,
         description,
       }
       return Object.assign({}, {...state}, {dreamCore: newDreamCore})
     }
-    case UPDATE_DREAM: {
-      const {dreamNum, boxNum, title, description} = action.payload;
+    case UPDATE_UNIT: {
+      const {dreamNum, unitNum, title, description} = action.payload;
       const newDream = {title, description};
       const newState: stateType = Object.assign({}, {...state});
       // @ts-ignore TODO: typescript
-      newState[sideDreamType[dreamNum]][boxNum] = newDream;
+      newState[sideDreamType[dreamNum]][unitNum] = newDream;
 
       return newState;
     }

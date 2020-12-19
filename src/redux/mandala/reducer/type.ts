@@ -1,8 +1,10 @@
-export type boxNumType = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7;
+export type unitNumType = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7;
 
 export type mandalaUnitType = { title: string, description: string };
 
-type dreamType = [
+export type mandalaDreamType = { core: mandalaUnitType; side: dreamType };
+
+export type dreamType = [
   mandalaUnitType,
   mandalaUnitType,
   mandalaUnitType,

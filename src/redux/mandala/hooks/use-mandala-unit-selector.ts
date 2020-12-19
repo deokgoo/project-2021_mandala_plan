@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { mandalaUnitType, stateType as mandalaStoreState } from '../reducer/type';
 import { mandalaStatusType } from './type';
 
-const useMandalaSelector = ({isCore, dreamNum, boxNum}: mandalaStatusType) => {
+const useMandalaUnitSelector = ({isCore, dreamNum, unitNum}: mandalaStatusType) => {
   const store = useStore();
   const [initialData, setInitialData] = useState<mandalaUnitType>();
 
@@ -18,21 +18,21 @@ const useMandalaSelector = ({isCore, dreamNum, boxNum}: mandalaStatusType) => {
         }
       } else {
         if(dreamNum === null) throw new Error('unexpect error');
-        if(boxNum===null) {
+        if(unitNum===null) {
           if(dreamNum===undefined) throw new Error('unexpect error');
           return mandalaReducer.dreamCore.side[dreamNum];
         } else {
           // @ts-ignore
-          return mandalaReducer[`dream${dreamNum}`][boxNum];
+          return mandalaReducer[`dream${dreamNum}`][unitNum];
         }
       }
     }
     setInitialData(getCurrentData());
-  }, [isCore, dreamNum, boxNum, store]);
+  }, [isCore, dreamNum, unitNum, store]);
 
   return {
     initialData,
   }
 }
 
-export default useMandalaSelector;
+export default useMandalaUnitSelector;

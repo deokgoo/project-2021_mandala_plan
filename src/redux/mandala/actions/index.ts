@@ -1,19 +1,19 @@
 import {
-  UPDATE_CORE,
-  UPDATE_CORE_SIDE,
-  UPDATE_DREAM,
+  UPDATE_CORE_UNIT,
+  UPDATE_CORE_SIDE_UNIT,
+  UPDATE_UNIT,
 } from './type';
 
-export const updateCore = (title: string, description: string) => ({
-  type: UPDATE_CORE,
+export const updateCoreUnit = (title: string, description: string) => ({
+  type: UPDATE_CORE_UNIT,
   payload: {
     title,
     description,
   }
 })
 
-export const updateCoreSide = (dreamNum: number, title: string, description: string) => ({
-  type: UPDATE_CORE_SIDE,
+export const updateCoreSideUnit = (dreamNum: number, title: string, description: string) => ({
+  type: UPDATE_CORE_SIDE_UNIT,
   payload: {
     dreamNum,
     title,
@@ -21,11 +21,11 @@ export const updateCoreSide = (dreamNum: number, title: string, description: str
   }
 });
 
-export const updateDream = (dreamNum: number, boxNum: number, title: string, description: string) => ({
-  type: UPDATE_DREAM,
+export const updateUnit = (dreamNum: number, unitNum: number, title: string, description: string) => ({
+  type: UPDATE_UNIT,
   payload: {
     dreamNum,
-    boxNum,
+    unitNum,
     title,
     description,
   }

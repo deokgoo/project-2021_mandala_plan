@@ -1,0 +1,20 @@
+@import "src/common/color";
+@import "src/common/size";
+
+.layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.mandalaMobileLayout {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: $mobileMandala * 3;
+  height: $mobileMandala * 3;
+}

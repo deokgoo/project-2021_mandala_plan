@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../../components/header';
 import MandalaWeb from '../../components/mandala-web';
 import styles from './main-web.module.scss';
-import SettingWeb from '../../components/UI/organisms/setting-web';
+import SettingWeb from '../../components/setting-web';
 
 const MainWeb = () => {
   // const [menuClose, setMenuClose] = useState(false);
@@ -14,12 +14,12 @@ const MainWeb = () => {
           <MandalaWeb />
         </div>
         <div className={styles.setting}>
-          <SettingWeb />
+          <SettingWeb isCore={true}/>
         </div>
       </div>
-
     </>
   );
 };
 
 export default MainWeb;
+

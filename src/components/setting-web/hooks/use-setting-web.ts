@@ -4,7 +4,7 @@ const useSettingWeb = () => {
   const refs = {
     titleRef: useRef<HTMLInputElement>(null),
     descriptionRef: useRef<HTMLInputElement>(null),
-    theme: useRef<HTMLInputElement>(null),
+    themeRef: useRef<HTMLInputElement>(null),
   }
 
   return {

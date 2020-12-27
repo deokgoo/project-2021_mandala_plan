@@ -3,9 +3,11 @@ import Header from '../../components/header';
 import MandalaWeb from '../../components/mandala-web';
 import styles from './main-web.module.scss';
 import SettingWeb from '../../components/setting-web';
+import useMainWeb from './hooks';
 
 const MainWeb = () => {
   // const [menuClose, setMenuClose] = useState(false);
+  const {select} = useMainWeb();
   return (
     <>
       <Header />
@@ -14,7 +16,7 @@ const MainWeb = () => {
           <MandalaWeb />
         </div>
         <div className={styles.setting}>
-          <SettingWeb isCore={true}/>
+          <SettingWeb {...select}/>
         </div>
       </div>
     </>

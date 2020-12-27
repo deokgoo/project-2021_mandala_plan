@@ -5,18 +5,18 @@ import MandalaWebDream from '../mandala-web-dream';
 
 const MandalaWeb = () => {
   const {mandalaData} = useMandalaSelector();
-  console.log(JSON.stringify(mandalaData));
+
   const renderDreamContainer = () => {
     return [
-      <MandalaWebDream dreamData={mandalaData.dream0}/>,
-      <MandalaWebDream dreamData={mandalaData.dream1}/>,
-      <MandalaWebDream dreamData={mandalaData.dream2}/>,
-      <MandalaWebDream dreamData={mandalaData.dream3}/>,
-      <MandalaWebDream dreamData={mandalaData.dreamCore}/>,
-      <MandalaWebDream dreamData={mandalaData.dream4}/>,
-      <MandalaWebDream dreamData={mandalaData.dream5}/>,
-      <MandalaWebDream dreamData={mandalaData.dream6}/>,
-      <MandalaWebDream dreamData={mandalaData.dream7}/>
+      <MandalaWebDream key={0} dreamData={mandalaData.dream0} coreTheme={styles.color5} sideTheme={styles.color1} />,
+      <MandalaWebDream key={1} dreamData={mandalaData.dream1} coreTheme={styles.color5} sideTheme={styles.color1} />,
+      <MandalaWebDream key={2} dreamData={mandalaData.dream2} coreTheme={styles.color5} sideTheme={styles.color1} />,
+      <MandalaWebDream key={3} dreamData={mandalaData.dream3} coreTheme={styles.color5} sideTheme={styles.color1} />,
+      <MandalaWebDream key={4} dreamData={mandalaData.dreamCore} coreTheme={styles.color2} sideTheme={styles.color5} />,
+      <MandalaWebDream key={5} dreamData={mandalaData.dream4} coreTheme={styles.color5} sideTheme={styles.color1} />,
+      <MandalaWebDream key={6} dreamData={mandalaData.dream5} coreTheme={styles.color5} sideTheme={styles.color1} />,
+      <MandalaWebDream key={7} dreamData={mandalaData.dream6} coreTheme={styles.color5} sideTheme={styles.color1} />,
+      <MandalaWebDream key={8} dreamData={mandalaData.dream7} coreTheme={styles.color5} sideTheme={styles.color1} />,
     ]
   }
   return (

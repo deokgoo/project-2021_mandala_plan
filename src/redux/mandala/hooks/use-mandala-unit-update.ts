@@ -1,7 +1,6 @@
-import { mandalaStatusType } from './type';
 import { useDispatch } from 'react-redux';
 import { updateCoreUnit, updateCoreSideUnit, updateUnit } from '../actions';
-import { mandalaUnitType } from '../reducer/type';
+import { mandalaStatusType, mandalaUnitType } from '../reducer/type';
 
 const useMandalaUnitUpdate = ({isCore, dreamNum=null, unitNum=null}: mandalaStatusType) => {
   const dispatch = useDispatch();

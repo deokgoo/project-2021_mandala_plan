@@ -3,8 +3,9 @@ import styles from './setting-web.module.scss';
 import useSettingWeb from './hooks';
 import useMandalaUnitUpdate from '../../redux/mandala/hooks/use-mandala-unit-update';
 import useMandalaUnitSelector from '../../redux/mandala/hooks/use-mandala-unit-selector';
+import { mandalaStatusType } from '../../redux/mandala/reducer/type';
 
-const SettingWeb = ({isCore, dreamNum, unitNum}: {isCore: boolean, dreamNum?: number, unitNum?: number}) => {
+const SettingWeb = ({isCore, dreamNum, unitNum}: mandalaStatusType) => {
   const { refs: {titleRef, descriptionRef, themeRef} } = useSettingWeb();
   const {　updateMandala　} = useMandalaUnitUpdate({isCore, dreamNum, unitNum});
   const { initialData } = useMandalaUnitSelector({isCore, dreamNum, unitNum});

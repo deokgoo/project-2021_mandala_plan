@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './mandala-web-unit.module.scss';
 
-const MandalaWebUnit = ({unitData}: any) => {
+const MandalaWebUnit = ({unitData, color}: any) => {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${color}`}>
       {unitData.title}
     </div>
   );

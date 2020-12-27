@@ -1,7 +1,12 @@
 import { useStore } from 'react-redux';
 import { useEffect, useState } from 'react';
-import { dreamType, mandalaDreamType, mandalaUnitType, stateType as mandalaStoreState } from '../reducer/type';
-import { mandalaStatusType } from './type';
+import {
+  dreamType,
+  mandalaDreamType,
+  mandalaStatusType,
+  mandalaUnitType,
+  stateType as mandalaStoreState
+} from '../reducer/type';
 
 const useMandalaDreamSelector = ({isCore, dreamNum}: mandalaStatusType) => {
   const store = useStore();

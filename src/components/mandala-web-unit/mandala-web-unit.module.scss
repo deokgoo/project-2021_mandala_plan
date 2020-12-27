@@ -4,12 +4,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1rem;
   width: $mediumMandala;
   height: $mediumMandala;
   border: 0.4px solid #818181;
   box-sizing: border-box;
   overflow: hidden;
+  cursor: pointer;
+}
+
+.container:hover {
+  opacity: 0.9;
 }
 
 @media screen and (min-width: $large){

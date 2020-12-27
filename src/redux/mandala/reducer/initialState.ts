@@ -118,6 +118,9 @@ const initialState: stateType = {
       {title: '', description: ''},
     ]
   },
+  mandalaState: {
+    isCore: true
+  }
 };
 
 export default initialState;

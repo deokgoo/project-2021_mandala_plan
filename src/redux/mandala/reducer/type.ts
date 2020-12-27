@@ -17,8 +17,19 @@ export type dreamType = [
 
 export type sideDreamType = 'dream0'|'dream1'|'dream2'|'dream3'|'dream4'|'dream5'|'dream6'|'dream7';
 
+export interface unitType {
+  core: mandalaUnitType;
+  side: dreamType;
+}
+
+export type mandalaStatusType = {
+  isCore: boolean;
+  dreamNum?: number|null;
+  unitNum?: number|null;
+}
+
 export type stateType = {
-  [dream in sideDreamType]: { core: mandalaUnitType; side: dreamType; };
+  [dream in sideDreamType]: unitType;
 } & {
   dreamCore: { core: mandalaUnitType; side: dreamType; };
-};
+} & { mandalaState: mandalaStatusType };

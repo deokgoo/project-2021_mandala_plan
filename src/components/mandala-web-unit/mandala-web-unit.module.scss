@@ -1,0 +1,27 @@
+@import 'src/common/size';
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  width: $mediumMandala;
+  height: $mediumMandala;
+  border: 0.4px solid #818181;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+@media screen and (min-width: $large){
+  .container {
+    height: $largeMandala;
+    width: $largeMandala;
+  }
+}
+
+@media screen and (min-width: $extraLarge){
+  .container {
+    height: $extraLargeMandala;
+    width: $extraLargeMandala;
+  }
+}

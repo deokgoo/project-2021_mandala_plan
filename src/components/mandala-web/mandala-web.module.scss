@@ -1,14 +1,23 @@
 @import 'src/common/size';
 
 .container {
-  height: $mediumMandala*9;
+  display: flex;
+  flex-wrap: wrap;
   width: $mediumMandala*9;
-  background-color: white;
+  height: $mediumMandala*9;
+  background: black;
 }
 
 @media screen and (min-width: $large){
   .container {
     height: $largeMandala*9;
     width: $largeMandala*9;
+  }
+}
+
+@media screen and (min-width: $extraLarge){
+  .container {
+    height: $extraLargeMandala*9;
+    width: $extraLargeMandala*9;
   }
 }

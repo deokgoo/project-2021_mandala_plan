@@ -22,14 +22,20 @@ export interface unitType {
   side: dreamType;
 }
 
-export type mandalaStatusType = {
+export interface dreamStatusType {
   isCore: boolean;
-  dreamNum?: number|null;
-  unitNum?: number|null;
+  dreamNum?: number | null;
+}
+
+export type mandalaStatusType = dreamStatusType & { unitNum?: number|null }
+
+export interface themesType {
+  currentTheme: number;
+  theme0: any;
 }
 
 export type stateType = {
   [dream in sideDreamType]: unitType;
 } & {
   dreamCore: { core: mandalaUnitType; side: dreamType; };
-} & { mandalaState: mandalaStatusType };
+} & { mandalaState: mandalaStatusType } & { themes: themesType };

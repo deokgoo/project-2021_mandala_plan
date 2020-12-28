@@ -6,17 +6,21 @@ const useMandalaUnitUpdate = ({isCore, dreamNum=null, unitNum=null}: mandalaStat
   const dispatch = useDispatch();
   const updateMandala = ({title, description}: mandalaUnitType) => {
     if (isCore) {
-      if (dreamNum === null) {
+      if (unitNum === null) {
+        console.log(1);
         dispatch(updateCoreUnit(title, description));
       } else {
-        updateCoreSideUnit(dreamNum, title, description);
+        console.log(2);
+        dispatch(updateCoreSideUnit(unitNum, title, description));
       }
     } else {
       if (dreamNum === null) throw new Error('unexpect error');
       if (unitNum === null) {
-        updateCoreSideUnit(dreamNum, title, description);
+        console.log(3);
+        dispatch(updateCoreSideUnit(dreamNum, title, description));
       } else {
-        updateUnit(dreamNum, unitNum, title, description);
+        console.log(4);
+        dispatch(updateUnit(dreamNum, unitNum, title, description));
       }
     }
   };

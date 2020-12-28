@@ -1,8 +1,9 @@
 import {
   UPDATE_CORE_UNIT,
   UPDATE_CORE_SIDE_UNIT,
-  UPDATE_UNIT,
+  UPDATE_UNIT, UPDATE_CURRENT_UNIT,
 } from './type';
+import { mandalaStatusType } from '../reducer/type';
 
 export const updateCoreUnit = (title: string, description: string) => ({
   type: UPDATE_CORE_UNIT,
@@ -30,3 +31,12 @@ export const updateUnit = (dreamNum: number, unitNum: number, title: string, des
     description,
   }
 });
+
+export const updateCurrentUnit = ({isCore, dreamNum, unitNum}: mandalaStatusType) => ({
+  type: UPDATE_CURRENT_UNIT,
+  payload: {
+    isCore,
+    dreamNum,
+    unitNum,
+  }
+})

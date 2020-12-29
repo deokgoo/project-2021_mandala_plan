@@ -8,7 +8,50 @@
 }
 
 .preview {
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: white;
+}
+
+.preview__title {
+
+}
+
+.formController {
+  display: flex;
+  flex-direction: column;
+}
+
+.titleLabel {
+  font-size: 0.6rem;
+  margin-bottom: 4px;
+}
+
+.input,
+.submit {
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.input {
+  line-height: 1.5rem;
+  margin-bottom: 10px;
+  padding: 0 6px;
+}
+
+.submit {
+  height: 1.2rem;
+  color: white;
+  margin: 10px 0;
+  cursor: pointer;
+  background-color: #cdcdcd;
+}
+
+.submit:hover {
+  background-color: #bcbcbc;
 }

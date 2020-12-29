@@ -1,4 +1,10 @@
-import { UPDATE_CORE_SIDE_UNIT, UPDATE_CORE_UNIT, UPDATE_CURRENT_UNIT, UPDATE_UNIT, } from '../actions/type';
+import {
+  UPDATE_CORE_SIDE_UNIT,
+  UPDATE_CORE_UNIT,
+  UPDATE_CURRENT_UNIT,
+  UPDATE_MANDALA_DATA,
+  UPDATE_UNIT,
+} from '../actions/type';
 import { AnyAction } from 'redux';
 import initialState from './initialState';
 import { stateType } from './type';
@@ -42,6 +48,10 @@ const reducer = (state: stateType = initialState, action: AnyAction) => {
     case UPDATE_CURRENT_UNIT: {
       const {isCore, dreamNum, unitNum} = action.payload;
       return Object.assign({}, {...state}, {mandalaState: {isCore, dreamNum, unitNum}})
+    }
+    case UPDATE_MANDALA_DATA: {
+      const {mandalaData} = action.payload;
+      return mandalaData.mandalaReducer;
     }
 
     default:

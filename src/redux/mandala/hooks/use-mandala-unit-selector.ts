@@ -10,19 +10,19 @@ const useMandalaUnitSelector = ({isCore, dreamNum, unitNum}: mandalaStatusType) 
     const getCurrentData = (): mandalaUnitType => {
       const { mandalaReducer }: {mandalaReducer: mandalaStoreState} = store.getState();
       if(isCore) {
-        if(dreamNum === null || dreamNum === undefined) {
+        if(unitNum === undefined || unitNum === null) {
           return mandalaReducer.dreamCore.core
         } else {
-          return mandalaReducer.dreamCore.side[dreamNum];
+          return mandalaReducer.dreamCore.side[unitNum];
         }
       } else {
         if(dreamNum === null) throw new Error('unexpect error');
-        if(unitNum === null) {
+        if(unitNum === null || unitNum === undefined) {
           if(dreamNum === undefined) throw new Error('unexpect error');
           return mandalaReducer.dreamCore.side[dreamNum];
         } else {
           // @ts-ignore
-          return mandalaReducer[`dream${dreamNum}`][unitNum];
+          return mandalaReducer[`dream${dreamNum}`].side[unitNum];
         }
       }
     }

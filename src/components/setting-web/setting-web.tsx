@@ -48,7 +48,7 @@ const SettingWeb = () => {
         <input id="description" className={styles.input} type="text" ref={descriptionRef} />
         <button className={styles.submit} onClick={updateMandalaUnit}>
           update
-        </button>[-=
+        </button>
         <button onClick={saveLocalStoarge}>save</button>
         <button onClick={loadLocalStoarge}>load</button>
       </form>

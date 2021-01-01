@@ -14,10 +14,18 @@
   cursor: pointer;
 }
 
+.container:hover {background-color:#929292;}
+
 .selected {border:2px solid red!important;}
 
-.container:hover {
-  background-color: #929292;
+.title {
+  width: 100%;
+  max-height: 100%;
+  word-wrap: break-word;      /* IE 5.5-7 */
+  white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+  white-space: pre-wrap;      /* current browsers */
+  text-align: center;
+
 }
 
 @media screen and (min-width: $large){

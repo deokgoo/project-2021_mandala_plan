@@ -43,7 +43,7 @@ const SettingWeb = () => {
       </div>
       <form className={styles.formController}>
         <label className={styles.titleLabel} htmlFor="title">Title</label>
-        <input id="title" className={styles.input} type="text" ref={titleRef} />
+        <input id="title" className={styles.input} ref={titleRef} type="text" autoComplete="off" />
         <label className={styles.titleLabel} htmlFor="description">Description</label>
         <input id="description" className={styles.input} type="text" ref={descriptionRef} />
         <button className={styles.submit} onClick={updateMandalaUnit}>

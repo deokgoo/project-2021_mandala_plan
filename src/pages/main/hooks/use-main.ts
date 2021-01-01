@@ -10,7 +10,7 @@ const getWindowDimensions = () => {
 }
 
 const useMain = () => {
-  const mobileWidth = 645;
+  const mobileWidth = 690;
   const [windowViewType, setWindowViewType] = useState<viewTypeEnum>(
     getWindowDimensions().width<mobileWidth?viewTypeEnum.mobile:viewTypeEnum.web);
 

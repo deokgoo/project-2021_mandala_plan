@@ -34,7 +34,9 @@ const MandalaWebUnit = ({unitState, unitData}: propsType) => {
   }
   return (
     <div className={`${isSelected()?styles.selected:''} ${styles.container} ${theme()}`} onClick={onClick}>
-      {unitData.title}
+      <div className={styles.title}>
+        {unitData.title}
+      </div>
     </div>
   );
 };
